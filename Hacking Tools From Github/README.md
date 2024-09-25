@@ -24,6 +24,28 @@
 - [Scanner-and-Patcher](https://github.com/Malwareman007/Scanner-and-Patcher) - A Web Vulnerability Scanner and Patcher
 - [sherlock](https://github.com/sherlock-project/sherlock) - Hunt down social media accounts by username across social networks
 - [Wordlist-Duplicates-Remover](https://github.com/7Ragnarok7/Wordlist-Duplicates-Remover) - A useful tool for cleaning up a wordlist.
+- [wordpress-plugins-scraper](https://github.com/RandomRobbieBF/wordpress-plugins-scraper) - Will open the first page of wordpress website and extract all js and css links with wp-content/plugins/
+- [SploitScan](https://github.com/xaitax/SploitScan) - SploitScan is a sophisticated cybersecurity utility designed to provide detailed information on vulnerabilities and associated exploits.
+- [dnsTwist](https://github.com/elceef/dnstwist) - Domain name permutation engine for detecting homograph phishing attacks, typo squatting, and brand impersonation
+- [de4py](https://github.com/Fadi002/de4py) - toolkit for python reverse engineering
+- [GitTools](https://github.com/internetwache/GitTools) - A repository with 3 tools for pwn'ing websites with .git repositories available
+- [Maryam](https://github.com/saeeddhqan/Maryam) - Maryam: Open-source Intelligence(OSINT) Framework
+- [NetworkAssessmentTool](https://github.com/HalilDeniz/NetworkAssessment) - NetworkAssessment: Network Compromise Assessment Tool
+- [PacketSpy-Python](https://github.com/HalilDeniz/PacketSpy) - PacketSpy is a powerful network packet sniffing tool designed to capture and analyze network traffic.
+- [PacketSpy-Go](https://github.com/c0mrade12211/PacketSpy) - simple packet sniffer written in the Go programming language.
+- [Proxy-Grabber-Scanner](https://github.com/KuzeNoYagami/Proxy-Grabber-Scanner) - Ambil proxy > Check Valid
+- [proxyrotate](https://github.com/0xdeadhead/proxyrotate) - This tool requires haproxy to be installed in the system. You can install haproxy by typing
+- [python-nuclei](https://github.com/itsdivyanshjain/python-nuclei) - Tool which is same as project-discovery/nuclei but just written in python.
+- [C2-Tracker](https://github.com/montysecurity/C2-Tracker) - Live Feed of C2 servers, tools, and botnets
+
+
+
+
+
+
+
+
+
 
 
 
