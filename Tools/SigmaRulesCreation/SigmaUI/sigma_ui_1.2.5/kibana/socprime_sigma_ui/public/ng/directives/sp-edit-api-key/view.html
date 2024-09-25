@@ -1,0 +1,8 @@
+<div class="form-group" ng-class="{'has-error': keyError}">
+    <input class="form-control" id="playbook-title" ng-model="key" type="text">
+    <div aria-hidden="false" class="text-danger form-error-container" ng-if="keyError">
+        <ul>
+            <li>Value is required and can't be empty</li>
+        </ul>
+    </div>
+</div>

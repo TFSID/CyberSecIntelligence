@@ -1,0 +1,34 @@
+<div class="{{ modalClass }}">
+    <form id="{{ formId }}">
+        <div class="row form-group">
+            <div class="col-md-4">
+                <div class="col-sm-12 no-padding-left no-padding-right" style="padding-bottom: 10px;">
+                    <div class="input-group" style="padding-left: 1px; min-width: auto;">
+                        <input type="text"
+                               ng-model="sigmaFilter"
+                               class="form-control prompt search-mitr"
+                               placeholder="Search on keyword or partial match, no special chars"
+                               title="Search on keyword or partial match, no special chars"
+                               autocomplete="off"
+                               style="z-index: 0;">
+                        <span class="input-group-btn" style="display: inline; z-index: 1">
+                            <button type="submit" ng-click="filterSigma()" class="btn btn-blue-grey sigma-search-btn"><span class="fa fa-search"></span></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-12 no-padding-left no-padding-right p-b-10">Found in <b>{{ totalSigma }}</b> files</div>
+                <div class="col-sm-12 no-padding-left no-padding-right">
+
+                    <div ui-tree data-drag-enabled="false" ng-if="list.length">
+                        <div sp-show-menu items="list" load-sigma="loadSigma"></div>
+                    </div>
+
+                    <div id="js-search-sigma-tree" style="overflow-x: hidden;"></div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="search-sigma-rule-container" ng-if="currentSigmaText"><pre id="translation-result" ng-bind-html="currentSigmaText"></pre></div>
+            </div>
+        </div>
+    </form>
+</div>

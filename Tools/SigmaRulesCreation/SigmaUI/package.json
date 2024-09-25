@@ -1,0 +1,33 @@
+{
+  "name": "socprime_sigma_ui",
+  "version": "1.2.5",
+  "description": "Socprime SIGMA UI",
+  "author": {
+    "name": "Volodymyr Kudriachenko",
+    "email": "vk@socprime.com",
+    "url": "http://socprime.com"
+  },
+  "main": "index.js",
+  "kibana": {
+    "version": "7.6.0",
+    "templateVersion": "8.0.0"
+  },
+  "homepage": "https://socprime.com/",
+  "dependencies": {
+    "c3": "^0.6.14",
+    "clipboard-copy": "^2.0.1",
+    "daterangepicker": "^2.1.27",
+    "fs": "0.0.1-security",
+    "gridstack": "^0.4.0",
+    "jquery-ui": "^1.12.1",
+    "jquery.cookie": "^1.4.1",
+    "js-base64": "^2.5.2",
+    "moment-range": "^4.0.2",
+    "moment-timezone": "^0.5.28",
+    "node-cmd": "^3.0.0",
+    "path": "^0.12.7",
+    "popper.js": "^1.16.1",
+    "sha.js": "^2.4.11",
+    "yamljs": "^0.3.0"
+  }
+}

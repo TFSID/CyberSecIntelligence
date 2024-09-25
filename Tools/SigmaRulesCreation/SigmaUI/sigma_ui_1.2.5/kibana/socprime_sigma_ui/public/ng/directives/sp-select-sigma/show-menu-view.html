@@ -1,0 +1,11 @@
+<ol ui-tree-nodes="" ng-model="items">
+    <li ng-repeat="item in items" ui-tree-node ng-if="item.hasSigma || !item.items">
+        <div ui-tree-handle ng-click="toggle(this); loadSigma(item); testFucntion(item);" ng-class="{'font-light': !item.items}">
+            <i class="fa fa-folder-o" role="presentation" ng-if="item.items && !collapsed"></i>
+            <i class="fa fa-folder-open-o" role="presentation" ng-if="item.items && collapsed"></i>
+            <i class="fa fa-file-o" role="presentation" ng-if="!item.items"></i>
+            {{ item.name }}
+        </div>
+        <div sp-show-menu items="item.items" ng-class="{hidden: !collapsed}" ng-if="item.items.length" load-sigma="loadSigma"></div>
+    </li>
+</ol>

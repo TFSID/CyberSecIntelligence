@@ -1,0 +1,101 @@
+<div class="app-container" ng-class="{'light-body': isLightThemeChecked}" ng-controller="MainController">
+    <main class="cd-main-content is-fixed">
+        <div sp-top-nav></div>
+
+        <section class="plr">
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="page-title position-reletive pull-left">SIGMA UI</h4>
+
+                    <div class="pull-right m-t-10 m-r-5" ng-click="spShowEditApiKey()" style="color: #aaaaaa; cursor: pointer">API KEY: {{ tdmApiKey }} <i class="fa fa-key" aria-hidden="true"></i></div>
+                </div>
+            </div>
+
+            <div class="row sigma-page-title-box">
+
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div ng-if="currSigma.title">
+                        <div class="sigma-page-title-name">
+                            <b>{{ currSigma.title }}</b>
+                        </div>
+                        <span ng-if="currSigma.author" class="m-t-9 font-12 display-inline-block" title="{{ currSigma.author }}"><b>Author:</b> {{ currSigma.author }}</span>
+                        <span ng-if="currSigma.logsource" class="p-l-5 p-r-5">|</span>
+                        <span ng-if="currSigma.logsource" class="m-t-9 font-12 display-inline-block"><b>Logsource :</b> {{ currSigma.logsource | joinBy:', ' }}</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12 r-side text-right p-t-9">
+                    <!-- btn -->
+                    <a href="https://github.com/Neo23x0/sigma" title="View on Github" class="btn btn-link m-r-5 m-b-5" target="_blank">
+                        View on Github <img aria-hidden="true" class="image-svg-icon" alt="View on Github" src="{{ basePath }}/plugins/socprime_sigma_ui/assets/img/github-logo.svg"/>
+                    </a>
+                    <!-- btn -->
+                    <a href="http://tdm.socprime.com" title="View on Threat Detection Marketplace" class="btn btn-link m-r-5 m-b-5" target="_blank">
+                        View on TDM <img aria-hidden="true" class="image-svg-icon" alt="View on Threat Detection Marketplace" src="{{ basePath }}/plugins/socprime_sigma_ui/assets/img/tdm-icon.svg"/>
+                    </a>
+                    <!-- btn -->
+                    <a ng-click="clearEditor()" class="create-sigma-document" title="Create">
+                        <button class="btn btn-no-border btn-outline-blue-grey s-type m-r-5 m-b-5">
+                            Create <i class="fa fa-plus-square m-r-5" aria-hidden="true"></i>
+                        </button>
+                    </a>
+                    <!-- btn -->
+                    <a ng-click="showSigmaChooser()" class="choose-sigma-document" title="Select">
+                        <button class="btn btn-no-border btn-outline-blue-grey m-r-5 m-b-5">
+                            Select <i class="fa fa-list m-l-5" aria-hidden="true"></i>
+                        </button>
+                    </a>
+
+                    <!-- btn -->
+                    <div class="btn-group resp-btn pull-right">
+                        <button id="dropdownMenu2" class="btn btn-outline-danger dropdown-toggle m-r-5 m-b-5" data-display="static" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Export">Export</button>
+                        <div class="dropdown-menu dropdown-menu-right download-report" aria-labelledby="dropdownMenu2">
+                            <a ng-repeat="(siemId, siemValue) in siemExportList" title="{{ siemValue.name }}" ng-click="exportToSiem(siemId, siemValue.name)">
+                                <button class="dropdown-item" type="button">{{ siemValue.name }}</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row m-t-20">
+                <div class="col-md-12 no-padding-left no-padding-right">
+                    <div class="grid-stack">
+                        <div class="grid-stack-item"
+                             data-gs-id="source"
+                             data-gs1-locked="false"
+                             data-gs-no-resize="false"
+                             data-gs-no-move="false"
+                             data-gs-x="0"
+                             data-gs-y="0"
+                             data-gs-width="6"
+                             data-gs-height="6"
+                             data-gs-min-height="4"
+                             data-gs-min-width="4">
+                            <div class="grid-stack-item-content">
+                                <div sp-yaml-editor content="currSigma.sigma_text" show-update="currSigma.showUpdateContent" update-handler="currSigma.updateContent"></div>
+                            </div>
+                        </div>
+                        <div class="grid-stack-item"
+                             data-gs-id="visual"
+                             data-gs1-locked="false"
+                             data-gs-no-resize="false"
+                             data-gs-no-move="false"
+                             data-gs-x="6"
+                             data-gs-y="0"
+                             data-gs-width="6"
+                             data-gs-height="6"
+                             data-gs-min-height="4"
+                             data-gs-min-width="4">
+                            <div class="grid-stack-item-content">
+                                <div sp-visual-editor content="currSigma.json" show-update="currSigma.showUpdateJson" update-handler="currSigma.updateJson"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <sp-footer curr-url="currUrl"></sp-footer>
+    </main>
+</div>

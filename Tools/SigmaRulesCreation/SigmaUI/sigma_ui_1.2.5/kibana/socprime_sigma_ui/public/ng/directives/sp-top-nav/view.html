@@ -1,0 +1,20 @@
+<div class="cd-tab-filter-wrapper">
+    <div class="cd-tab-filter">
+        <!--<ul class="nav nav-pills pull-left" id="pills-tab">
+            <li class="nav-item">
+                <a class="btn btn-outline-danger" ng-class="{'active': currentPage == 'main'}" id="cases-btn" href="#/main">Main</a>
+            </li>
+        </ul>-->
+
+        <a href="https://socprime.com" target="_blank" style="display: inline; padding: 0 !important; margin: 0 !important;">
+            <img aria-hidden="true" class="logo" alt="SOC Prime" src="{{ basePath }}/plugins/socprime_sigma_ui/assets/img/logo-sm.png"/>
+        </a>
+
+        <span style="position: relative; float: right; display: inline-block;">
+              <div class="form-field __first">
+                  <input class="form-field_input" id="theme-switcher" ng-model="isLightThemeChecked" ng-init="isLightThemeChecked = (themeCookie == 'light')" type="checkbox" ng-checked="themeCookie == 'light'">
+                  <label class="form-field_label" for="theme-switcher">Dark/Light theme</label>
+              </div>
+          </span>
+    </div>
+</div>

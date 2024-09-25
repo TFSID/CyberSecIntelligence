@@ -1,0 +1,24 @@
+<div class="card no-margin">
+    <div class="card-block p-0">
+        <section class="code-editor">
+            <div class="controls">
+                <span> <a href="#" onclick="return false;" class="btn text-white p-l-8 p-r-0 float-left">VISUAL EDITOR</a> </span>
+                <i class="fa fa-arrows-alt accordion"></i>
+            </div>
+            <div class="position-relative p-b-35">
+                <div class="editor-overlay" ng-show="showUpdate">
+                    <div class="text-center layer-container"></div>
+                    <div class="text-center button-container">
+                        <div class="p-b-10">Generate visual</div>
+                        <a class="hover generate-visual-editor" title="Generate visual" ng-click="updateHandler()">
+                            <i class="fa fa-refresh" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div id="{{ editorId }}" class="position-relative" style="overflow-y: auto; overflow-x: hidden;"></div>
+            </div>
+        </section>
+    </div>
+
+    <div class="foot-list" style="z-index: 10;" class="p-t-5 p-b-5"><div class="row"><div class="col-12"></div></div></div>
+</div>

@@ -1,0 +1,36 @@
+<div class="card plan-card no-margin">
+    <div class="card-block p-0">
+        <section class="code-editor">
+            <div class="controls">
+                <span><a href="#" onclick="return false;" class="btn text-white p-l-6 p-r-0 float-left">SOURCE CODE EDITOR</a></span>
+                <i class="fa fa-arrows-alt accordion disabled1"></i>
+            </div>
+            <div class="position-relative p-b-35">
+                <div class="editor-overlay" ng-show="showUpdate">
+                    <div class="text-center layer-container"></div>
+                    <div class="text-center button-container">
+                        <div class="p-b-10">Generate code</div>
+                        <a class="hover generate-code-editor" title="Generate code" ng-click="updateHandler()">
+                            <i class="fa fa-refresh" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="embed-nav">
+                    <ul>
+                        <li>
+                            <span class="font-08rem"><span class="text-danger">SHA 256: </span>{{ sigmaHash }}</span>
+                        </li>
+                    </ul>
+                </div>
+                <div id="{{ editorId }}"></div>
+            </div>
+        </section>
+    </div>
+    <div class="foot-list p-t-5 p-b-5" style="z-index: 10">
+        <div class="row">
+            <div class="col-12">
+                <span class="source-code-editor-limit-container display-inline-block text-left">{{ lengthCount }} / 5000</span>
+            </div>
+        </div>
+    </div>
+</div>

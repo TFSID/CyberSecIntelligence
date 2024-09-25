@@ -1,0 +1,7 @@
+{
+  "debug": true,
+  "max_upload_period_in_month": 2,
+  "python_path": "/usr/bin/python3.6",
+  "tdm_api_integration_tool_path": "/opt/scripts/script_tdm_api/tdm_api_for_sigma_ui.py",
+  "tpm_sigma_folder_path": "/opt/scripts/script_tdm_api/sigmas"
+}

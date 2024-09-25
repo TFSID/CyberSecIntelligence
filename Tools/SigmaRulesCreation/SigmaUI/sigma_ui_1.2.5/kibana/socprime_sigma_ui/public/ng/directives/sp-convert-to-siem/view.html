@@ -1,0 +1,7 @@
+<div class="{{ formClass }}">
+    <form id="{{ formId }}">
+        <pre id="translation-result" ng-if="translation">{{ translation }}</pre>
+    </form>
+    <div class="alert alert-success" ng-show="savedSuccess" role="alert">{{ savedSuccess }}</div>
+    <div class="alert alert-danger" ng-show="savedErrors" role="alert">{{ savedErrors }}</div>
+</div>
