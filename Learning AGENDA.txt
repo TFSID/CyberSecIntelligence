@@ -1,0 +1,76 @@
+07/07/2023 Note's
+
+=========================================================================================================================================================================================================================================================================================================================================================================================================
+
+
+AGENDA
+
+How to run DFIR tasks at scale across many endpoints
+
+RE&CT Enterprise Matrix
+
+The importance of timeline analysis
+
+Privileged user and group enumeration
+
+Identification of logged users
+
+Interactive Triage 
+
+Searching for files, searching for IoC (URLs, IP, signatures, patterns, CC data)
+
+Web browsers history analysis
+
+Establish a baseline for different OS components (system32 file hashing, shim cache / amcache / SRUM DB, BAM records, ACLs, running services, run/runonce keys, scheduled tasks, autoexec, envs, VSS)
+
+Detecting capabilities in PE, shellcode files
+
+Analyzing process memory regions (loaded DLLs / .NET assemblies per process)
+
+Process call chains / pstree / process arguments
+
+IMPHashing
+
+Detecting suspicious child processes of wmi, psexec, smbexec
+
+Prefetch analysis
+
+Timestomping detection
+
+Finding LNK files
+
+Recovering deleted files from a directory
+
+Playing with USN.journal
+
+Searching in MFT for exploitation attempts
+
+Open source ways for memory acquisition and memory forensics
+
+Filesystem and process memory Yara scans
+
+Finding and analyzing Office documents with macros
+
+Checking Windows Event Logs / EVTX with Sigma detection rules
+
+Registry modification events HKCU / HKLM
+
+Detecting mutants / named mutex
+
+Raw NTFS parsing / ADS
+
+Detecting parent-process spoofing
+
+Data correlation and hunting for suspicious network events + RITA 
+
+Finding and analyzing Office documents with macros enabled
+
+Searching for persistence methods in use
+
+Direct interaction with the endpoint: command execution on demand, system modification, and quarantine examples
+
+Hunts enrichment and pivoting between data sources
+
+Playing with offline Mordor Datasets / EVTX-Attack-Samples
+
+Using theHive for incident management

@@ -1,0 +1,20 @@
+Tools:
+
+Metasploit
+Nuclei
+SoftPerfect Network Scanner
+Nmap
+Sqlmap
+msfvenom
+Meterpreter
+Censys
+MITRE & ATT4CKS
+OpenBSD
+Nessus
+Recon-ng
+Burp Suite
+Acunetix
+Mimikatz
+
+
+Flipper Zero

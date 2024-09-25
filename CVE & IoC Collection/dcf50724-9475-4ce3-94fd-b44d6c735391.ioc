@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="dcf50724-9475-4ce3-94fd-b44d6c735391" last-modified="2023-08-29T09:10:08" xmlns="http://schemas.mandiant.com/2010/ioc">
+  <short_description>CVE-2023-38831-winrar-zero-day</short_description>
+  <authored_by>TFS</authored_by>
+  <authored_date>2023-08-29T08:52:48</authored_date>
+  <links />
+  <definition>
+    <Indicator operator="OR" id="dd353831-b02c-4769-9f72-1c733561188b">
+      <Indicator operator="OR" id="f34eb562-9e31-424a-b782-6a81a908cd7a">
+        <IndicatorItem id="28942ba5-1c2f-4f5d-baa4-007687704010" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">763df8b2db7f2f2fa0c8adb8c1cc05ff15b59e6a9756cbe9fc4a1c12329b62af</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ba9fef80-5e1a-4c87-b4d2-98ce4dbf15d7" condition="contains">
+          <Context document="FileItem" search="FileItem/FileName" type="mir" />
+          <Content type="string">Trading_Strategy_2023.rar</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="90460380-97ff-4343-9288-0a930a35e899">
+        <IndicatorItem id="36b4e86b-3251-4497-9dc5-b49665f924f5" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string">0860e09e529fc6ccbbffebafedc27497fbbcaff57b5376fb4cc732c331d1f591</Content>
+        </IndicatorItem>
+        <IndicatorItem id="39d22e4a-f984-4220-ab99-1ba3d4995929" condition="contains">
+          <Context document="FileItem" search="FileItem/FileName" type="mir" />
+          <Content type="string">Cryptocurrencies2023.rar</Content>
+        </IndicatorItem>
+        <Indicator operator="OR" id="fa731a64-41e0-461c-856b-3610eebebe11">
+          <IndicatorItem id="93d6d2b6-fe6d-4339-bd24-00e7e4774f87" condition="contains">
+            <Context document="FileItem" search="FileItem/FileName" type="mir" />
+            <Content type="string">Cryptocurrencies2023_mpgh.net.rar</Content>
+          </IndicatorItem>
+        </Indicator>
+      </Indicator>
+      <Indicator operator="OR" id="70464cdc-68d0-467e-aa27-95e26d4fa03d">
+        <IndicatorItem id="f0afb0f1-3991-470f-84ed-9f10288f959f" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string"></Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="b91f6cac-41bd-4a72-b973-009a0bcf32fb">
+        <IndicatorItem id="a8e77fde-1480-4226-836b-083d7f91e03e" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string"></Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="878b32aa-0642-4202-9ef6-26fbc42f6eb2">
+        <IndicatorItem id="022dcfa2-ed73-461a-b88e-b60052446b47" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" ></Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="6c77a0ec-605f-4786-ac9b-eeb9f5cd5719">
+        <IndicatorItem id="948c1d37-96fa-4099-b963-712471a0bb46" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" ></Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="efecfcb8-33fc-4aea-802a-00309150f288">
+        <IndicatorItem id="ec292e29-9e5e-419b-913a-fc2cf1a2fb64" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" ></Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="042cb161-7c87-41bd-b54b-932ff6b8c78e">
+        <IndicatorItem id="37aef835-86f5-46a7-8d9a-35eeafc6df03" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" ></Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="eab91ce3-8340-450a-a1e0-82c345d5fe20">
+        <IndicatorItem id="19101f1e-11fb-4459-97e0-1b9944912f8c" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" ></Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="16f708c1-acaf-42c0-87aa-0b0745771edf">
+        <IndicatorItem id="046c769e-3085-43f3-bd84-bfef2a6f81b3" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" ></Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="4b656d40-adde-4579-88e3-1f1f61b3ac37">
+        <IndicatorItem id="c94c2591-1a31-407a-b35b-b0d422b34313" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" ></Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="8edfece7-a961-40d6-a84f-e5a43cb9a7db">
+        <IndicatorItem id="a6cc7ff3-83f6-42b2-b274-65ea1e9c214c" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" ></Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="5bb73df2-fa5d-4b84-acf4-d66f10da1df5">
+        <IndicatorItem id="2945df52-912f-4e0b-9549-8217ac28c547" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" ></Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="8dbf28b4-8ebd-4ee7-a57f-9f244a7ca434">
+        <IndicatorItem id="3b9df558-171d-4f4e-b0bf-6ab34108e7af" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" ></Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="490ce6ea-2df7-45db-84a5-9cbe816bdf12">
+        <IndicatorItem id="b4a0025d-c882-462f-ab99-1c3e28e575ba" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" ></Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="c840f54f-3455-4d66-b738-e3dca8316765">
+        <IndicatorItem id="fb9cc2c3-29de-4738-8ab0-e21380450e5b" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" ></Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="83180879-eaa6-4fd6-a45a-4ec1538bf2db">
+        <IndicatorItem id="2a6fa698-4971-434f-84e9-411f6453d786" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" ></Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="8f376971-6194-4856-add4-538f2b170f24">
+        <IndicatorItem id="52168585-dd7d-4311-8c9a-059dadf15439" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" ></Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="8e168559-8205-4b38-bdff-5b4fcad6376d">
+        <IndicatorItem id="93532783-83a9-41c9-b5e1-ee0dd6d6bb7e" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" ></Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="ae25c467-683a-4e58-b76d-fb94f43deeaa">
+        <IndicatorItem id="2322a794-0b93-40e3-b435-461e45a5d288" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" />
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="ff233485-e2c9-4f37-9ab0-c00bab94b7b9">
+        <IndicatorItem id="bc3d9258-501a-4fe9-82ef-aac2558a55b7" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" />
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="4b3916c8-147f-4f3d-a32b-21e5d7e7bde9">
+        <IndicatorItem id="c9b44e16-0811-4b8e-824b-59ce25649c3d" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" />
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="59d95e1e-1872-49f7-84bb-52299f93cc30">
+        <IndicatorItem id="8b13db95-18d7-4e3f-a8bf-c4eb8249c054" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" />
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="3bd863ac-3456-4f76-a166-7c9099d1c2d7">
+        <IndicatorItem id="57deaa61-49f6-44dd-bc3a-a0e93d24fb66" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" />
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="325a8b7e-1f75-41c4-925c-ff819e36fd69">
+        <IndicatorItem id="fd230da5-f5f6-498f-803e-21c0113fc160" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" />
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="354dcd42-f10b-4ede-a653-8e83486e6124">
+        <IndicatorItem id="0b0b556a-58d5-4ac5-be27-e1227a40620e" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" />
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="57d186af-6413-4c16-b1ff-9f79ed5adfec">
+        <IndicatorItem id="34827aeb-0f92-49f0-9ac9-c5b57af4e20d" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" />
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="d56e1095-aa33-46d7-afe3-3520a035ee95">
+        <IndicatorItem id="96fd2ff8-7c5c-4e5f-be4a-ced7a98ca19a" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" />
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="c0949585-cb3d-41ae-be3b-c3f522d0dae2">
+        <IndicatorItem id="ffe3d625-f48a-49dc-bf0f-f4bd302fbb4b" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" />
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="82e82075-84db-4050-94b5-6b8d070082d1">
+        <IndicatorItem id="cbd67450-7ad9-4b80-b886-d4f49a3d64a4" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" />
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="accbc94c-63ac-4ce8-a928-5a40de0a0518">
+        <IndicatorItem id="1d2e7c06-cead-446c-aa68-56112dc0fcb2" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" />
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="cd41fd50-219b-4356-a93e-7c512b35d773">
+        <IndicatorItem id="65ac5c16-562a-4105-8462-f3b1681f70ac" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" />
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="2bd92861-fc66-48f8-90be-fa8721bce0bc">
+        <IndicatorItem id="2cb16993-c717-46dd-be54-a388771af1f4" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" />
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="25d17c7c-20cf-45ad-80a3-fac872fecd41">
+        <IndicatorItem id="1e6009f8-95b9-4588-80f3-fc97df0aee37" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" />
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="3f6eb2ec-18f9-4d60-93ea-2f3c621296f1">
+        <IndicatorItem id="027ba65c-2b78-47a4-8d48-c8f0ed321d67" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" />
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="a4de65d6-c480-4173-a86a-fe72ccdc1c14">
+        <IndicatorItem id="fa272b54-ac0c-4a96-950a-363dd3586c94" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" />
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="6da7f311-dfcf-4691-8fe1-e9e29dab6d18">
+        <IndicatorItem id="254e5efa-62ef-4dce-a34c-ab9bb6aa6ff7" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" />
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="fc21b490-86f5-41fc-9891-64039207fd20">
+        <IndicatorItem id="f321f070-713d-413f-86a5-6df56eb80611" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" />
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="792d0786-61a1-4cf0-acfc-a6214f578ccd">
+        <IndicatorItem id="8c104ddf-13e8-4384-802f-3ff00ba55c9c" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" />
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="38fd1663-775e-4e44-8e3a-5c0c78983a4e">
+        <IndicatorItem id="2ba4d3ee-a311-4374-b695-8002ea1e8c64" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" />
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="ce41f735-28ba-45b0-b161-1b0eecfcce08">
+        <IndicatorItem id="32c5392f-e13a-40de-8387-59406d1e43cc" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" />
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="9cde2986-8fdd-4ee5-9b18-95241904fb47">
+        <IndicatorItem id="34fb71b1-aa21-4ae5-bfbb-b109992f3759" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" />
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="fcfe188a-ea3b-4147-a245-930fb6a8b6f1">
+        <IndicatorItem id="55bbc674-9d00-4905-b8e4-04c2a012eee6" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir" />
+          <Content type="string" />
+        </IndicatorItem>
+      </Indicator>
+    </Indicator>
+  </definition>
+</ioc>

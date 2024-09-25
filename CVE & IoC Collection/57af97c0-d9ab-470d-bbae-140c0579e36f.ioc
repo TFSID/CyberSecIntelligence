@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="57af97c0-d9ab-470d-bbae-140c0579e36f" last-modified="2023-08-29T10:00:48" xmlns="http://schemas.mandiant.com/2010/ioc">
+  <short_description>CVE-2023-38831-winrar-zero-day ( IP Adresses )</short_description>
+  <description>IP Adresses Indicator for CVE-2023-38831-winrar-zero-day </description>
+  <authored_by>TFS</authored_by>
+  <authored_date>2023-08-29T09:41:19</authored_date>
+  <links />
+  <definition>
+    <Indicator operator="OR" id="77979efc-37e2-4a1f-bad4-2cf3ea180057">
+      <Indicator operator="OR" id="98197d63-cfa8-43bc-ad5b-e2cbf0920724">
+        <IndicatorItem condition="contains">
+          <Context document="DnsEntryItem" search="DnsEntryItem/RecordData/IPv4Address" type="mir" />
+          <Content type="IP" />
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR">
+        <IndicatorItem condition="contains">
+          <Context document="DnsEntryItem" search="DnsEntryItem/RecordData/IPv4Address" type="mir" />
+          <Content type="IP" />
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" />
+      <Indicator operator="OR" />
+      <Indicator operator="OR" />
+      <Indicator operator="OR" />
+      <Indicator operator="OR" />
+      <Indicator operator="OR" />
+      <Indicator operator="OR" />
+      <Indicator operator="OR" />
+      <Indicator operator="OR" />
+      <Indicator operator="OR" />
+      <Indicator operator="OR" />
+      <Indicator operator="OR" />
+    </Indicator>
+  </definition>
+</ioc>

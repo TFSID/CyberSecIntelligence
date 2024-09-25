@@ -1,0 +1,13 @@
+﻿  SysmonSimulator.c
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 36 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  SysmonSimulator.vcxproj -> C:\Users\tegar\Downloads\Compressed\SourceCode-latest\SysmonSimulator-main\x64\Release\SysmonSimulator.exe
+C:\Users\tegar\Downloads\Compressed\SourceCode-latest\SysmonSimulator-main\SysmonSimulator.c(161): warning C6335: Leaking process information handle 'pinfo.hProcess'.
+C:\Users\tegar\Downloads\Compressed\SourceCode-latest\SysmonSimulator-main\SysmonSimulator.c(301): warning C6335: Leaking process information handle 'pinfo.hProcess'.
+C:\Users\tegar\Downloads\Compressed\SourceCode-latest\SysmonSimulator-main\SysmonSimulator.c(315): warning C6001: Using uninitialized memory 'hProcessToAccess'.
+C:\Users\tegar\Downloads\Compressed\SourceCode-latest\SysmonSimulator-main\SysmonSimulator.c(446): warning C6001: Using uninitialized memory 'hPipe'.
+C:\Users\tegar\Downloads\Compressed\SourceCode-latest\SysmonSimulator-main\SysmonSimulator.c(481): warning C6001: Using uninitialized memory 'hPipe'.
+C:\Users\tegar\Downloads\Compressed\SourceCode-latest\SysmonSimulator-main\SysmonSimulator.c(515): warning C6387: 'Temp_value_#431' could be '0'.
+C:\Users\tegar\Downloads\Compressed\SourceCode-latest\SysmonSimulator-main\SysmonSimulator.c(599): warning C6011: Dereferencing NULL pointer 'pDosH'. 

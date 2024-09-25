@@ -1,0 +1,10 @@
+https://github.com/CrowdStrike/falcon-query-assets
+https://github.com/CrowdStrike/logscale-community-content
+https://github.com/pe3zx/crowdstrike-falcon-queries
+
+https://github.com/shauntdergrigorian/splunkqueries
+https://www.stationx.net/splunk-cheat-sheet/
+
+https://gosplunk.com/
+
+https://github.com/Neo23x0/Loki

@@ -1,0 +1,4 @@
+C:\Users\scarredmonk\source\repos\SysmonSimulator\SysmonSimulator\x64\Release\SysmonSimulator.exe
+C:\Users\tegar\Downloads\Compressed\SourceCode-latest\SysmonSimulator-main\x64\Release\SysmonSimulator.exe
+C:\Users\tegar\Downloads\Compressed\SourceCode-latest\SysmonSimulator-main\x64\Release\SysmonSimulator.exe.lastcodeanalysissucceeded
+C:\Users\tegar\Downloads\Compressed\SourceCode-latest\SysmonSimulator-main\x64\Release\NativeCodeAnalysis.read.1.tlog
