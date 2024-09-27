@@ -37,6 +37,10 @@
 - [proxyrotate](https://github.com/0xdeadhead/proxyrotate) - This tool requires haproxy to be installed in the system. You can install haproxy by typing
 - [python-nuclei](https://github.com/itsdivyanshjain/python-nuclei) - Tool which is same as project-discovery/nuclei but just written in python.
 - [C2-Tracker](https://github.com/montysecurity/C2-Tracker) - Live Feed of C2 servers, tools, and botnets
+- [SSHScan](https://github.com/evict/SSHScan) - Scan SSH ciphers
+- [ShellSweep](https://github.com/splunk/ShellSweep) - ShellSweeping the evil.
+- [Security-Event-Analysis-Automation-Tool](https://github.com/AzharAnwar9/Security-Event-Analysis-Automation-Tool) - A SOC Analyst's tool to automate the investigation & validation of possible Indicators of Compromise (IOCs) and perform various tasks including Phishing Email Analysis & Brand Monitoring to fasten the incident response.
+
 
 
 
